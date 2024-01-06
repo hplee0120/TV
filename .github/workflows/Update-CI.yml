@@ -12,7 +12,7 @@ jobs:
       
       - name: Run generate script
         run: |
-          wget https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json -nv -O ./tv/tvbox.json
+          wget https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json -nv -O ./tvbox.json
           sed -i 's|./live.txt|https://git.domob.org/https://raw.githubusercontent.com/hplee0120/tv/main/live.txt|g' ./tv/tvbox.json
       - name: Commit file
         run: |
