@@ -12,8 +12,8 @@ jobs:
       
       - name: Run generate script
         run: |
-          wget https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json -nv -O ./tvbox.json
-          sed -i 's|./live.txt|https://git.domob.org/https://raw.githubusercontent.com/hplee0120/tv/main/live.txt|g' ./tvbox.json
+          wget https://raw.githubusercontent.com/owen2000wy/owentv/main/OwenTV.json -nv -O ./tvbox.json
+          sed -i 's|https://jihulab.com/owen2000wy/owentv/-/raw/main/HP20230319.txt|https://git.domob.org/https://raw.githubusercontent.com/hplee0120/tv/main/live.txt|g' ./tvbox.json
       - name: Commit file
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
